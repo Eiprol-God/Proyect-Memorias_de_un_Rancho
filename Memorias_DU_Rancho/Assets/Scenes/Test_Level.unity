@@ -307,7 +307,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.13, y: 2.84}
+  m_Size: {x: 2.84, y: 2.84}
   m_EdgeRadius: 0
 --- !u!114 &87047567
 MonoBehaviour:
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FreeMovement2D
   moveSpeed: 5
-  jumpForce: 8
+  jumpForce: 9.8
   groundCheck: {fileID: 647102406}
   groundCheckRadius: 0.2
   groundLayer:
