@@ -906,9 +906,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2036
-        y: 495
-        width: 422
-        height: 255
+        y: 503
+        width: 417
+        height: 247
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -919,28 +919,6 @@ TextureImporter:
       bones: []
       spriteID: 276444262b1e9ee4b8187e8e70d522d5
       internalID: 39199472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gabriel_Sheet#1_37
-      rect:
-        serializedVersion: 2
-        x: 2355
-        y: 492
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e47ab3118d1f15f4e973263da7b5a07c
-      internalID: -313700526
       vertices: []
       indices: 
       edges: []
@@ -1032,6 +1010,7 @@ TextureImporter:
       Gabriel_Run_5: -1598807338
       Gabriel_Run_6: -742654753
       Gabriel_Sheet#1_37: -313700526
+      Gabriel_Sheet_1_0: 745433458
       Gabriel_Slide_1: 61445741
       Gabriel_Slide_2: -1836859844
       Gabriel_Slide_3: 39199472
