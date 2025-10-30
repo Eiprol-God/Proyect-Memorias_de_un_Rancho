@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GlobalSettingsManager : MonoBehaviour
 {
+    [Header("UI opcional (solo si hay menú de opciones en la escena)")]
     public Slider brightnessSlider;
     public Slider volumeSlider;
 
@@ -16,21 +17,9 @@ public class GlobalSettingsManager : MonoBehaviour
 
     private void Awake()
     {
-        //Esto mantiene las configuraciones en todo el juego
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
+    
+    	DontDestroyOnLoad(gameObject);
 
-        instance = this;
-        DontDestroyOnLoad(gameObject); // No cambair al cambiar de escena
-
-        // Aplicar configuraciones guardadas apenas inicia
-        ApplySavedSettings();
-
-        // Escuchar cuando se cargan nuevas escenas
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDestroy()
@@ -40,7 +29,7 @@ public class GlobalSettingsManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Reconectar referencias
+        // Intentar reconectar referencias (por ejemplo, nuevo jugador)
         TryFindComponents();
         ApplySavedSettings();
     }
@@ -50,13 +39,9 @@ public class GlobalSettingsManager : MonoBehaviour
         // Si no hay overlay o player, buscarlos automáticamente
         if (brightnessOverlay == null)
             brightnessOverlay = FindObjectOfType<Image>();
-
-        if (playerController == null)
-            playerController = FindObjectOfType<PlayerController>();
     }
 
     //Llamar cuando se muevan sliders (desde el menú)
-
     public void ApplySettingsFromUI()
     {
         if (brightnessSlider != null)
@@ -65,12 +50,12 @@ public class GlobalSettingsManager : MonoBehaviour
         if (volumeSlider != null)
             PlayerPrefs.SetFloat("Volume", volumeSlider.value);
 
+        
         PlayerPrefs.Save();
         ApplySavedSettings();
     }
 
     //Aplica los valores guardados a los componentes actuales
-
     public void ApplySavedSettings()
     {
         float brightness = PlayerPrefs.GetFloat("Brightness", 0.5f);
@@ -90,9 +75,8 @@ public class GlobalSettingsManager : MonoBehaviour
             float volDB = Mathf.Log10(Mathf.Clamp(volume, 0.0001f, 1f)) * 20;
             audioMixer.SetFloat("MasterVolume", volDB);
         }
-        
-        // --- Sincronizar sliders si existen ---
 
+        // --- Sincronizar sliders si existen ---
         if (brightnessSlider != null) brightnessSlider.value = brightness;
         if (volumeSlider != null) volumeSlider.value = volume;
     }
@@ -102,7 +86,6 @@ public class GlobalSettingsManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("Brightness", 0.5f);
         PlayerPrefs.SetFloat("Volume", 1f);
-
         PlayerPrefs.Save();
         ApplySavedSettings();
     }
