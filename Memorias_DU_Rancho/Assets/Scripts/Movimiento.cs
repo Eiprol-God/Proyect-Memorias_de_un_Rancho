@@ -3,118 +3,83 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement2D : MonoBehaviour
 {
-    [Header("Movimiento")]
+    [Header("Ajustes de movimiento")]
     public float moveSpeed = 5f;
     public float runSpeed = 8f;
     public float jumpForce = 8f;
 
-    [Header("Slide")]
-    public float slideSpeed = 10f;
-    public float slideDuration = 0.4f;
-    private bool isSliding = false;
-
-    [Header("Detección de suelo")]
+    [Header("Detección de piso")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
 
     private Rigidbody2D rb;
-    private Animator animator;
+    private Animator anim;
 
     private bool isGrounded;
     private float moveInput;
+    private bool isRunning;
 
-    private void Start()
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
-    private void Update()
+    void Update()
     {
         // Movimiento horizontal
         moveInput = Input.GetAxisRaw("Horizontal");
 
-        // --------------------------------------------------------------------
-        // ANIMACIONES BÁSICAS
-        // --------------------------------------------------------------------
-        animator.SetBool("Walking", moveInput != 0 && !isSliding);
-        animator.SetBool("Run", Input.GetKey(KeyCode.LeftShift) && moveInput != 0 && !isSliding);
+        // Detectar correr
+        isRunning = Input.GetKey(KeyCode.LeftShift) && moveInput != 0;
 
-        // --------------------------------------------------------------------
-        // SALTO
-        // --------------------------------------------------------------------
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isSliding)
+        // Saltar
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            animator.SetTrigger("Jump");
+            anim.SetBool("Jump", true);   // Activar animación de salto
         }
 
-        // --------------------------------------------------------------------
-        // ATAQUE
-        // --------------------------------------------------------------------
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            animator.SetTrigger("Atack");
-        }
-
-        // --------------------------------------------------------------------
-        // PICK (recoger)
-        // --------------------------------------------------------------------
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            animator.SetTrigger("Pick");
-        }
-
-        // --------------------------------------------------------------------
-        // SLIDE (Shift + S o Shift + W)
-        // --------------------------------------------------------------------
-        if (!isSliding && Input.GetKey(KeyCode.LeftShift) && (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.W)))
-        {
-            StartCoroutine(DoSlide());
-        }
+        // Control de animaciones
+        UpdateAnimations();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
-        // Detectar suelo
+        // Comprobar suelo
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Si está deslizando, no mover normal
-        if (isSliding)
-            return;
-
-        // Movimiento normal / correr
-        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : moveSpeed;
+        // Movimiento según si corre o camina
+        float speed = isRunning ? runSpeed : moveSpeed;
         rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
 
-        // Flip del personaje
-        if (moveInput != 0)
-            transform.localScale = new Vector3(Mathf.Sign(moveInput), 1, 1);
+        // Resetear Jump al tocar el piso
+        if (isGrounded && rb.linearVelocity.y <= 0.1f)
+            anim.SetBool("Jump", false);
     }
 
-    // --------------------------------------------------------------------
-    // SLIDE
-    // --------------------------------------------------------------------
-    private System.Collections.IEnumerator DoSlide()
+    void UpdateAnimations()
     {
-        isSliding = true;
-        animator.SetBool("Slide", true);
+        // Walking
+        bool walking = (moveInput != 0 && !isRunning && isGrounded);
+        anim.SetBool("Walking", walking);
 
-        // Aplicamos impulso dependiendo de la dirección
-        float slideDirection = transform.localScale.x;
-        rb.linearVelocity = new Vector2(slideDirection * slideSpeed, rb.linearVelocity.y);
+        // Run
+        bool run = (moveInput != 0 && isRunning && isGrounded);
+        anim.SetBool("Run", run);
 
-        yield return new WaitForSeconds(slideDuration);
-
-        isSliding = false;
-        animator.SetBool("Slide", false);
+        // Idle
+        bool idle = (moveInput == 0 && isGrounded);
+        // Idle es automático porque Walking y Run estarán en false
     }
 
-    // Gizmo del suelo
-    private void OnDrawGizmosSelected()
+    void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
     }
 }
