@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 463507486}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundChek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,11 +144,11 @@ Transform:
   m_GameObject: {fileID: 463507485}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.8994746, y: 1.237, z: -22.66401}
+  m_LocalPosition: {x: -0.119999886, y: -2.046801, z: -0.0940094}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 953420317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &734021859
 GameObject:
@@ -414,6 +414,8 @@ GameObject:
   - component: {fileID: 953420320}
   - component: {fileID: 953420319}
   - component: {fileID: 953420318}
+  - component: {fileID: 953420321}
+  - component: {fileID: 953420322}
   m_Layer: 0
   m_Name: Gabriel_Pj
   m_TagString: Untagged
@@ -513,7 +515,8 @@ Transform:
   m_LocalPosition: {x: -5.7794747, y: 3.283801, z: -22.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 463507486}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &953420318
@@ -528,15 +531,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522a2e5ce81f9614f9334bf5207457c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement2D
-  moveSpeed: 5
+  speed: 5
   runSpeed: 9
-  jumpForce: 30
-  slideDuration: 1.4
-  groundCheck: {fileID: 463507486}
-  groundCheckRadius: 0.2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  idleDelay: 7
 --- !u!61 &953420319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -610,6 +607,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &953420321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953420314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23caeccbfd1bacb42844e12d3ffe117c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
+  jumpForce: 25
+  groundCheck: {fileID: 463507486}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &953420322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953420314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b109c025be1e24b9a7077fba07c66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRun
+  walkSpeed: 5
+  runSpeed: 10
+  rb: {fileID: 0}
+  anim: {fileID: 0}
+  isRunning: 0
 --- !u!1 &1070599608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,7 +1447,6 @@ SceneRoots:
   - {fileID: 1744898435}
   - {fileID: 1958776011}
   - {fileID: 1402103366}
-  - {fileID: 463507486}
   - {fileID: 953420317}
   - {fileID: 2021928509}
   - {fileID: 734021860}
