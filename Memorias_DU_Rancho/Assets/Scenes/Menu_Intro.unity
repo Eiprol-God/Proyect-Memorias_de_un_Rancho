@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 963e250c960a2b04db286720d4d8810f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1538,7 +1538,7 @@ GameObject:
   - component: {fileID: 1126106614}
   - component: {fileID: 1126106613}
   m_Layer: 0
-  m_Name: SceneController
+  m_Name: SceneChange_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2566,10 +2566,10 @@ SceneRoots:
   - {fileID: 891342381}
   - {fileID: 624254320}
   - {fileID: 408425111}
-  - {fileID: 1126106614}
   - {fileID: 279503396}
   - {fileID: 1589374827}
   - {fileID: 1852390907}
   - {fileID: 83851222}
   - {fileID: 1352025754}
   - {fileID: 1108584820}
+  - {fileID: 1126106614}

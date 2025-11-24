@@ -16,16 +16,20 @@ public class PlayerAttack : MonoBehaviour
 
     void HandleAttackInput()
     {
-        // --- Attack 1 : X + W ---
-        if (Input.GetKeyDown(KeyCode.X) && Input.GetKey(KeyCode.W))
+        // Attack1 → X + W
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            anim.SetTrigger("Attack1");
-        }
+            if (Input.GetKey(KeyCode.W))
+            {
+                anim.SetTrigger("Attack1");
+                return;
+            }
 
-        // --- Attack 2 : X + S ---
-        if (Input.GetKeyDown(KeyCode.X) && Input.GetKey(KeyCode.S))
-        {
-            anim.SetTrigger("Attack2");
+            if (Input.GetKey(KeyCode.S))
+            {
+                anim.SetTrigger("Attack2");
+                return;
+            }
         }
     }
 }
