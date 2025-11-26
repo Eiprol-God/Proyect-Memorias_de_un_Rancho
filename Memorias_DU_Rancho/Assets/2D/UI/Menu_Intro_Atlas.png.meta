@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -108,12 +108,584 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Button_1_Hov
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 2250
+        width: 347
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f7297801171ac4fb86b0ca4a2aa7ba
+      internalID: 1172209448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_1_Nor
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 2250
+        width: 344
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9db04851e86595429dabab84cb96cda
+      internalID: -868781253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasto_1
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 2164
+        width: 165
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddda0e55bc5938947bd8c1f162b3a34f
+      internalID: -652161025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follaje_1
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 1975
+        width: 464
+        height: 501
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0fcfb8d9e87204b80e6b0dacdb5ec4
+      internalID: 1961623397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_1_Pre
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 2250
+        width: 343
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96f4f754e5e9e34ea9abf68ed65bf88
+      internalID: 124261443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vida_Llena
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 2244
+        width: 253
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c061ad23e9580408719d18a4b8d50d
+      internalID: 1445889757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vida_Vacia
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 2249
+        width: 206
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4d002c68facdf488556a9f5c72d060
+      internalID: 616464678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasto_2
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 2170
+        width: 81
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca65c4db1899cad4ab86dd6702717344
+      internalID: -1936156057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasto_3
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 2168
+        width: 81
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110b815522169ea41b11c857c0defeb9
+      internalID: 475155798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_2_Nor
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 2065
+        width: 481
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ce239fe99d16346ac4d054962f919b
+      internalID: 491157416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_3_Pre
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1865
+        width: 373
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd00a0c73c39a9439e97d9d195e2ccd
+      internalID: -1386082032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_3_Hov
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 1865
+        width: 379
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2d7368daa403340ad7c2147ef867a5
+      internalID: -1170431405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_3_Nor
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1865
+        width: 371
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09dc56c7302d2a141b22c44d50226ea5
+      internalID: 607853387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hoja_Partic
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1862
+        width: 405
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5e7fa5adedc1d4fbdae65c6f75ccfc
+      internalID: 1200406788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paja_1
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1784
+        width: 330
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7436cc95fb36a446b8e7f4dbf824a2a
+      internalID: 1489727007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follaje_2
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1475
+        width: 462
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ab806eda1b8d647b5281adfd42d8c6
+      internalID: -650516474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pagina_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 954
+        width: 1258
+        height: 888
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1099701b3396f488f4e6db52b8628f
+      internalID: 367324318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botton_Conf
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1509
+        width: 372
+        height: 271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4254f238104f0224daaf3b276816d936
+      internalID: -739421366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paja_Partc
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1520
+        width: 136
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ecdfe6fd372c646b7fd07c878644d1
+      internalID: 257708059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_1
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 22
+        width: 713
+        height: 741
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc104f8b3fd0a844bb0a44aa2b12efe
+      internalID: 288004383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paja_3
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 730
+        width: 395
+        height: 686
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb1c4676c715e443bdf17e030c33033
+      internalID: -2024508783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pagina_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 28
+        width: 1260
+        height: 889
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4f55835799c634db7abbc25c0f1bd0
+      internalID: -249401526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paja_2
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 6
+        width: 393
+        height: 706
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce8af9f62853ef4a9b40f444f0199d0
+      internalID: -1391506556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_2_Hov
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2065
+        width: 481
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1cd7c00b01f2e49b73d5fb37e6d725
+      internalID: 1854067862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Button_2_Pre
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2065
+        width: 481
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c60c0fd2e0fc74e9c176c04686ec4d
+      internalID: 944010958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puerta_2
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 763
+        width: 713
+        height: 741
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2916badec34af4f877145bc69eea08
+      internalID: 1907050020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a235fd15361b8f743b564eee68d0c35c
     internalID: 0
     vertices: []
     indices: 
@@ -121,8 +693,44 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Botton_Conf: -739421366
+      Button_1_Hov: 1172209448
+      Button_1_Nor: -868781253
+      Button_1_Pre: 124261443
+      Button_2_Hov: 1854067862
+      Button_2_Nor: 491157416
+      Button_2_Pre: 944010958
+      Button_3_Hov: -1170431405
+      Button_3_Nor: 607853387
+      Button_3_Pre: -1386082032
+      Follaje_1: 1961623397
+      Follaje_2: -650516474
+      Hoja_Partic: 1200406788
+      Menu_Intro_Atlas_13: -286059132
+      Menu_Intro_Atlas_14: 185444736
+      Menu_Intro_Atlas_17: -224032784
+      Menu_Intro_Atlas_2: -1162323274
+      Menu_Intro_Atlas_21: -1763594964
+      Menu_Intro_Atlas_22: -632114397
+      Menu_Intro_Atlas_28: -1861968825
+      Menu_Intro_Atlas_31: 463337355
+      Pagina_1: 367324318
+      Pagina_2: -249401526
+      Paja_1: 1489727007
+      Paja_2: -1391506556
+      Paja_3: -2024508783
+      Paja_Partc: 257708059
+      Pasto_1: -652161025
+      Pasto_2: -1936156057
+      Pasto_3: 475155798
+      Puerta_1: 288004383
+      Puerta_2: 1907050020
+      Vida_Llena: 1445889757
+      Vida_Vacia: 616464678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
