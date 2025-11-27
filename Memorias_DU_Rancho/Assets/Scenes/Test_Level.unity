@@ -405,7 +405,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 101.177, y: 72.5429}
+  m_SizeDelta: {x: 70.0475, y: 50.451}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &391207770
 MonoBehaviour:
@@ -739,8 +739,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1445889757, guid: d51229ad888232d4ea35b85428816819, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -814,8 +814,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1445889757, guid: d51229ad888232d4ea35b85428816819, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -889,8 +889,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1445889757, guid: d51229ad888232d4ea35b85428816819, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1087,8 +1087,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1445889757, guid: d51229ad888232d4ea35b85428816819, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1268,7 +1268,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100.5725, y: 76.5719}
+  m_SizeDelta: {x: 73.4597, y: 51.996}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &886254848
 MonoBehaviour:
@@ -1397,6 +1397,7 @@ GameObject:
   - component: {fileID: 953420320}
   - component: {fileID: 953420319}
   - component: {fileID: 953420318}
+  - component: {fileID: 953420321}
   m_Layer: 0
   m_Name: Gabriel_Pj
   m_TagString: Untagged
@@ -1597,6 +1598,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &953420321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953420314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87d316c9299287459d73e9868fcc068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 10
+  currentHealth: 5
+  LiveFull: {fileID: 1445889757, guid: d51229ad888232d4ea35b85428816819, type: 3}
+  LiveEmpty: {fileID: 616464678, guid: d51229ad888232d4ea35b85428816819, type: 3}
+  hearts:
+  - {fileID: 1257218659}
+  - {fileID: 926271527}
+  - {fileID: 443836314}
+  - {fileID: 2050616266}
+  - {fileID: 490476411}
+  - {fileID: 1663686837}
+  - {fileID: 588801723}
+  - {fileID: 812314913}
+  - {fileID: 659235861}
+  - {fileID: 573328308}
 --- !u!1 &1070599608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,8 +1973,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1445889757, guid: d51229ad888232d4ea35b85428816819, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
