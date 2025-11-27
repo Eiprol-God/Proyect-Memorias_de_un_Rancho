@@ -220,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vida_Llena
+      name: LiveFull
       rect:
         serializedVersion: 2
         x: 1103
@@ -242,7 +242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vida_Vacia
+      name: LiveEmpty
       rect:
         serializedVersion: 2
         x: 1378
@@ -509,10 +509,10 @@ TextureImporter:
       name: Paja_Partc
       rect:
         serializedVersion: 2
-        x: 1707
-        y: 1520
-        width: 136
-        height: 224
+        x: 1619
+        y: 1243
+        width: 77
+        height: 252
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,23 +660,67 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puerta_2
+      name: Arbusto_1
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 763
-        width: 713
-        height: 741
-      alignment: 9
-      pivot: {x: 0.9976035, y: 0.99986774}
+        x: 1299
+        y: 770
+        width: 316
+        height: 717
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e2916badec34af4f877145bc69eea08
-      internalID: 1907050020
+      spriteID: 96091324f99d19246826fc3afcab3d46
+      internalID: 1161620155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_2
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 769
+        width: 332
+        height: 632
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c4f78bcdae23c4b99104c08f253e2b
+      internalID: 1454357842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_3
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1409
+        width: 321
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144aae0197952a349a66bb6a0c486387
+      internalID: -234270615
       vertices: []
       indices: 
       edges: []
@@ -697,6 +741,9 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      Arbusto_1: 1161620155
+      Arbusto_2: 1454357842
+      Arbusto_3: -234270615
       Botton_Conf: -739421366
       Button_1_Hov: 1172209448
       Button_1_Nor: -868781253
@@ -710,6 +757,8 @@ TextureImporter:
       Follaje_1: 1961623397
       Follaje_2: -650516474
       Hoja_Partic: 1200406788
+      LiveEmpty: 616464678
+      LiveFull: 1445889757
       Menu_Intro_Atlas_13: -286059132
       Menu_Intro_Atlas_14: 185444736
       Menu_Intro_Atlas_17: -224032784
@@ -728,9 +777,6 @@ TextureImporter:
       Pasto_2: -1936156057
       Pasto_3: 475155798
       Puerta_1: 288004383
-      Puerta_2: 1907050020
-      Vida_Llena: 1445889757
-      Vida_Vacia: 616464678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
