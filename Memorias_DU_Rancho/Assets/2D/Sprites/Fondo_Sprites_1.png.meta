@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4407bee3a5a1aec42a8bc43053d2052f
+guid: 34c29b1c6050aa5438c6fa77b304c68d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,79 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_01
+      name: Pajaro_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2209
+        width: 397
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e1d43bb84994342a29da667b4e7036
+      internalID: -500622290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 582
+        width: 846
+        height: 719
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7b8927d212cf84a87fe6fd4e852260
+      internalID: -60250405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_3
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 632
+        width: 814
+        height: 621
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121ea0e1383797940bee5cf4f0d93440
+      internalID: -1541382879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ca\xF1as"
       rect:
         serializedVersion: 2
         x: 18
-        y: 281
-        width: 113
-        height: 284
+        y: 30
+        width: 916
+        height: 555
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ee10bd13d9d93c41a19bf4cef7a96a3
-      internalID: 1944662059
+      spriteID: b08c005b1ee9f9d45a2c8716bed8abb8
+      internalID: -37656964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_02
+      name: Hierba
       rect:
         serializedVersion: 2
-        x: 138
-        y: 279
-        width: 113
-        height: 285
+        x: 966
+        y: 28
+        width: 916
+        height: 551
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 184598d2df1038847808ee1a3ec3d2e8
-      internalID: -1106434008
+      spriteID: dc477dd86aee03c429664c76b6978a53
+      internalID: -2049802186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_03
+      name: Pajaro_2
       rect:
         serializedVersion: 2
-        x: 266
-        y: 279
-        width: 189
-        height: 278
+        x: 414
+        y: 2209
+        width: 397
+        height: 262
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,218 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1389e03e654a671409de6e4a496f509a
-      internalID: 1288014759
+      spriteID: aa832325946e6424ebd603d7c4489fdd
+      internalID: 213996625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_04
-      rect:
-        serializedVersion: 2
-        x: 493
-        y: 277
-        width: 113
-        height: 284
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69b536c324558c147a38637189636eec
-      internalID: -1758685929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_05
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 279
-        width: 110
-        height: 286
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 220e2809d2dda2b4d87243488320a10f
-      internalID: -158409898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_06
-      rect:
-        serializedVersion: 2
-        x: 787
-        y: 283
-        width: 190
-        height: 276
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 484e22720f31d5b4584a21f9a51a8197
-      internalID: -390256409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Expression_02
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 72
-        width: 48
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 479228b7f7a51ae4c8fda8589bd04eef
-      internalID: 1279395214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Expression_03
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 49
-        width: 108
-        height: 161
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3b35d590ae92034095504e483174291
-      internalID: -1594477309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Expression_04
-      rect:
-        serializedVersion: 2
-        x: 376
-        y: 46
-        width: 137
-        height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df27154dee3e06048a22e54767c60cad
-      internalID: 1785292785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Expression_05
-      rect:
-        serializedVersion: 2
-        x: 530
-        y: 52
-        width: 78
-        height: 118
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78f334c81aae22b449b8631943d8df73
-      internalID: -757716518
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Expression_06
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 48
-        width: 76
-        height: 118
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b4943b3bed9de74eb09942d86cd1799
-      internalID: -1963592225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Expression_07
-      rect:
-        serializedVersion: 2
-        x: 717
-        y: 44
-        width: 76
-        height: 118
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a2ad63878978ca488b5f644c1255d9a
-      internalID: 516880687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Expression_08
+      name: Pajaro_3
       rect:
         serializedVersion: 2
         x: 812
-        y: 47
-        width: 76
-        height: 119
+        y: 2209
+        width: 397
+        height: 262
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aef847f2597cc044af383a46d86b8b8
-      internalID: 26798900
+      spriteID: 97ac8bab6c79d0746ad1c6d3eeb8efa2
+      internalID: 1120824003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Expression_01
+      name: Pajaro_4
       rect:
         serializedVersion: 2
-        x: 103
-        y: 74
-        width: 35
-        height: 34
+        x: 1210
+        y: 2205
+        width: 397
+        height: 262
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,8 +279,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 256b592e8fed6364f8bf081de14e4eae
-      internalID: 1193828479
+      spriteID: 82d2735bfe90bea4cb885445cd5c40af
+      internalID: 109482119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pajaro_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1938
+        width: 399
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea67957890ba08488b267bd487c0f7d
+      internalID: -611194361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pajaro_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1938
+        width: 399
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9768bbf8039df47be528a92bfe24cd
+      internalID: 1235939857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pajaro_7
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1938
+        width: 399
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20562599700214f4cad8c8147ef134f7
+      internalID: -694447306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pajaro_8
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1938
+        width: 399
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b55d83aebb50ac43a959a1dae377514
+      internalID: 1956735291
       vertices: []
       indices: 
       edges: []
@@ -421,7 +377,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0a150d01486e54e4088706a67b560ba2
+    spriteID: 0f8120e9379be2449b0d846a282513c4
     internalID: 0
     vertices: []
     indices: 
@@ -433,23 +389,31 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Expression_01: 1193828479
-      Expression_02: 1279395214
-      Expression_03: -1594477309
-      Expression_04: 1785292785
-      Expression_05: -757716518
-      Expression_06: -1963592225
-      Expression_07: 516880687
-      Expression_08: 26798900
-      Sprites_Adrian_16: 1651864317
-      Sprites_Adrian_6: -518934160
-      Sprites_Adrian_8: 681874635
-      Walk_01: 1944662059
-      Walk_02: -1106434008
-      Walk_03: 1288014759
-      Walk_04: -1758685929
-      Walk_05: -158409898
-      Walk_06: -390256409
+      Arbol_2: -60250405
+      Arbol_3: -1541382879
+      "Ca\xF1as": -37656964
+      Fondo_Sprites_1_1: -140806051
+      Fondo_Sprites_1_11: 2021754578
+      Fondo_Sprites_1_12: -2145471199
+      Fondo_Sprites_1_13: 1256074436
+      Fondo_Sprites_1_14: -442470040
+      Fondo_Sprites_1_15: -569945933
+      Fondo_Sprites_1_16: 1477910126
+      Fondo_Sprites_1_2: -1501363177
+      Fondo_Sprites_1_3: 1037101492
+      Fondo_Sprites_1_4: -719142225
+      Fondo_Sprites_1_5: -469866525
+      Fondo_Sprites_1_6: -1572412355
+      Fondo_Sprites_1_7: -2037798110
+      Hierba: -2049802186
+      Pajaro_1: -500622290
+      Pajaro_2: 213996625
+      Pajaro_3: 1120824003
+      Pajaro_4: 109482119
+      Pajaro_5: 1235939857
+      Pajaro_6: -611194361
+      Pajaro_7: -694447306
+      Pajaro_8: 1956735291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
