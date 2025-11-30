@@ -4488,54 +4488,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4089162296913994973, guid: 1536f10ca2944794f8e82b42d2dc86ab, type: 3}
   m_PrefabInstance: {fileID: 710829666}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &734021859
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 734021860}
-  - component: {fileID: 734021861}
-  m_Layer: 0
-  m_Name: GlobalSettings_Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &734021860
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734021859}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 332.90292, y: 192.3619, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &734021861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734021859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 504544ef4a33bbb4ca50ae70dfea276e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GlobalSettingsManager
-  brightnessSlider: {fileID: 0}
-  volumeSlider: {fileID: 0}
-  audioMixer: {fileID: 24100000, guid: e159b5b8d1bf84d45839dd54dbe6db35, type: 2}
-  brightnessOverlay: {fileID: 794832853}
 --- !u!1001 &738894781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4843,6 +4795,7 @@ GameObject:
   - component: {fileID: 752989982}
   - component: {fileID: 752989981}
   - component: {fileID: 752989980}
+  - component: {fileID: 752989983}
   m_Layer: 0
   m_Name: Pajaro_1
   m_TagString: Untagged
@@ -4939,12 +4892,33 @@ Transform:
   m_GameObject: {fileID: 752989979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 253.5, y: 16.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 253.5, y: 10.32, z: -22}
+  m_LocalScale: {x: 0.38481, y: 0.38481, z: 0.38481}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &752989983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752989979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c521524413ebf2242a85ee11d1249dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BirdMovement
+  minSpeed: 4.5
+  maxSpeed: 6.5
+  startX: -7.93
+  endX: 253.5
+  minY: 9.5
+  maxY: 12.2
+  rotationAmount: 10
+  rotationSpeed: 2
+  animator: {fileID: 752989980}
 --- !u!1001 &758072405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5179,7 +5153,7 @@ GameObject:
   - component: {fileID: 794832854}
   - component: {fileID: 794832853}
   m_Layer: 5
-  m_Name: Image_Brillo
+  m_Name: BrightnessOverlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6450,8 +6424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522a2e5ce81f9614f9334bf5207457c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement2D
-  speed: 5
-  runSpeed: 10
+  speed: 8
+  runSpeed: 20
   idleDelay: 7
   jumpForce: 25
   groundCheck: {fileID: 463507486}
@@ -12562,7 +12536,7 @@ GameObject:
   - component: {fileID: 2021928509}
   - component: {fileID: 2021928508}
   m_Layer: 0
-  m_Name: Music
+  m_Name: PlayerAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13841,6 +13815,5 @@ SceneRoots:
   - {fileID: 1577189897}
   - {fileID: 1402103366}
   - {fileID: 2021928509}
-  - {fileID: 734021860}
   - {fileID: 1769516304}
   - {fileID: 752989982}

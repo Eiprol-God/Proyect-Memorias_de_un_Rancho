@@ -3742,54 +3742,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1536f10ca2944794f8e82b42d2dc86ab, type: 3}
---- !u!1 &798355812
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 798355814}
-  - component: {fileID: 798355813}
-  m_Layer: 0
-  m_Name: GlobalSettings_Manger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &798355813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798355812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 504544ef4a33bbb4ca50ae70dfea276e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GlobalSettingsManager
-  brightnessSlider: {fileID: 0}
-  volumeSlider: {fileID: 0}
-  audioMixer: {fileID: 24100000, guid: e159b5b8d1bf84d45839dd54dbe6db35, type: 2}
-  brightnessOverlay: {fileID: 1748014647}
---- !u!4 &798355814
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798355812}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.63929, y: 3.06644, z: -21.29927}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &801035529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5231,6 +5183,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1536f10ca2944794f8e82b42d2dc86ab, type: 3}
+--- !u!1 &1108584819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108584820}
+  - component: {fileID: 1108584821}
+  m_Layer: 0
+  m_Name: GlobalSettings_Manger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1108584820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108584819}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 358.56534, y: 195.41891, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1108584821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108584819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504544ef4a33bbb4ca50ae70dfea276e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalSettingsManager
+  brightnessSlider: {fileID: 0}
+  volumeSlider: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: e159b5b8d1bf84d45839dd54dbe6db35, type: 2}
+  brightnessOverlay: {fileID: 1748014647}
 --- !u!1001 &1123353572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5970,7 +5970,7 @@ GameObject:
   - component: {fileID: 1352025754}
   - component: {fileID: 1352025753}
   m_Layer: 0
-  m_Name: PlayerAudio
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8116,7 +8116,7 @@ GameObject:
   - component: {fileID: 1748014648}
   - component: {fileID: 1748014647}
   m_Layer: 5
-  m_Name: BrightnessOverlay
+  m_Name: Image_Brillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9719,5 +9719,5 @@ SceneRoots:
   - {fileID: 279503396}
   - {fileID: 1589374827}
   - {fileID: 1352025754}
+  - {fileID: 1108584820}
   - {fileID: 1126106614}
-  - {fileID: 798355814}

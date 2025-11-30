@@ -17,9 +17,18 @@ public class GlobalSettingsManager : MonoBehaviour
 
     private void Awake()
     {
-    
-    	DontDestroyOnLoad(gameObject);
+        // --- Singleton para que no haya duplicados ---
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        // --- SUSCRIBIR EL EVENTO IMPORTANTÍSIMO ---
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDestroy()
@@ -29,19 +38,32 @@ public class GlobalSettingsManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Intentar reconectar referencias (por ejemplo, nuevo jugador)
         TryFindComponents();
         ApplySavedSettings();
     }
 
     private void TryFindComponents()
+{
+    // Buscar overlay por nombre exacto
+    if (brightnessOverlay == null)
     {
-        // Si no hay overlay o player, buscarlos automáticamente
-        if (brightnessOverlay == null)
-            brightnessOverlay = FindObjectOfType<Image>();
+        GameObject overlayObj = GameObject.Find("BrightnessOverlay");
+        if (overlayObj != null)
+            brightnessOverlay = overlayObj.GetComponent<Image>();
     }
 
-    //Llamar cuando se muevan sliders (desde el menú)
+    // Buscar sliders si existen en la escena
+    GameObject bSlider = GameObject.Find("BrightnessSlider");
+    if (bSlider != null)
+        brightnessSlider = bSlider.GetComponent<Slider>();
+
+    GameObject vSlider = GameObject.Find("VolumeSlider");
+    if (vSlider != null)
+        volumeSlider = vSlider.GetComponent<Slider>();
+}
+
+
+    //Llamar cuando se muevan sliders
     public void ApplySettingsFromUI()
     {
         if (brightnessSlider != null)
@@ -50,18 +72,16 @@ public class GlobalSettingsManager : MonoBehaviour
         if (volumeSlider != null)
             PlayerPrefs.SetFloat("Volume", volumeSlider.value);
 
-        
         PlayerPrefs.Save();
         ApplySavedSettings();
     }
 
-    //Aplica los valores guardados a los componentes actuales
     public void ApplySavedSettings()
     {
         float brightness = PlayerPrefs.GetFloat("Brightness", 0.5f);
         float volume = PlayerPrefs.GetFloat("Volume", 1f);
 
-        // --- Brillo ---
+        // Brillo
         if (brightnessOverlay != null)
         {
             Color c = brightnessOverlay.color;
@@ -69,19 +89,18 @@ public class GlobalSettingsManager : MonoBehaviour
             brightnessOverlay.color = c;
         }
 
-        // --- Volumen ---
+        // Volumen
         if (audioMixer != null)
         {
             float volDB = Mathf.Log10(Mathf.Clamp(volume, 0.0001f, 1f)) * 20;
             audioMixer.SetFloat("MasterVolume", volDB);
         }
 
-        // --- Sincronizar sliders si existen ---
+        // Sliders (si existen en esta escena)
         if (brightnessSlider != null) brightnessSlider.value = brightness;
         if (volumeSlider != null) volumeSlider.value = volume;
     }
 
-    //Restablecer valores predeterminados
     public void ResetDefaults()
     {
         PlayerPrefs.SetFloat("Brightness", 0.5f);

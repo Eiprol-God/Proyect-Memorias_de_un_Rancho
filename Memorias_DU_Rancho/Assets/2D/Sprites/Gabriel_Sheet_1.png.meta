@@ -660,7 +660,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_25
+      name: Gabriel_Attack_1
       rect:
         serializedVersion: 2
         x: 15
@@ -682,7 +682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_26
+      name: Gabriel_Attack_2
       rect:
         serializedVersion: 2
         x: 367
@@ -704,7 +704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_27
+      name: Gabriel_Attack_3
       rect:
         serializedVersion: 2
         x: 722
@@ -726,7 +726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_28
+      name: Gabriel_Attack_4
       rect:
         serializedVersion: 2
         x: 1070
@@ -748,7 +748,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_29
+      name: Gabriel_Attack_5
       rect:
         serializedVersion: 2
         x: 1417
@@ -770,7 +770,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_30
+      name: Gabriel_Attack_6
       rect:
         serializedVersion: 2
         x: 1767
@@ -792,7 +792,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_32
+      name: Gabriel_Slide_1
       rect:
         serializedVersion: 2
         x: 23
@@ -814,13 +814,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_33
+      name: Gabriel_Slide_2
       rect:
         serializedVersion: 2
-        x: 322
-        y: 503
-        width: 319
-        height: 250
+        x: 334
+        y: 336
+        width: 288
+        height: 418
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -829,20 +829,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b481cc01747ef640abbc9e2fcfa81cf
-      internalID: -1957608740
+      spriteID: c2f09cfe7dd69614cbf1fcc24e4dafe2
+      internalID: -1998442285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabriel_Sheet_1_34
+      name: Gabriel_Slide_3
       rect:
         serializedVersion: 2
-        x: 648
-        y: 495
-        width: 422
-        height: 255
+        x: 655
+        y: 338
+        width: 288
+        height: 418
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,52 +851,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7883fa438f835bd40a65112926274cf2
-      internalID: -523562791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gabriel_Sheet_1_35
-      rect:
-        serializedVersion: 2
-        x: 1073
-        y: 501
-        width: 318
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b2fac3e900ba274ca2293e33247342c
-      internalID: 2146493235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gabriel_Sheet_1_36
-      rect:
-        serializedVersion: 2
-        x: 1400
-        y: 334
-        width: 317
-        height: 419
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 489350490184ca44cb467a6ece668ea0
-      internalID: -276339676
+      spriteID: 4633c97dbcef03a438d8e6c049c59df4
+      internalID: 389843076
       vertices: []
       indices: 
       edges: []
@@ -917,6 +873,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      Gabriel_Attack_1: -311268187
+      Gabriel_Attack_2: 1527032963
+      Gabriel_Attack_3: -631223383
+      Gabriel_Attack_4: 510208785
+      Gabriel_Attack_5: -133134567
+      Gabriel_Attack_6: 2054464495
       Gabriel_Idle_1: 745433458
       Gabriel_Idle_2: 1161655992
       Gabriel_Idle_3: 1007688638
@@ -937,19 +899,15 @@ TextureImporter:
       Gabriel_Run_4: -1084170410
       Gabriel_Run_5: 937401505
       Gabriel_Run_6: -201576056
-      Gabriel_Sheet_1_0: 1908285417
-      Gabriel_Sheet_1_25: -311268187
-      Gabriel_Sheet_1_26: 1527032963
-      Gabriel_Sheet_1_27: -631223383
-      Gabriel_Sheet_1_28: 510208785
-      Gabriel_Sheet_1_29: -133134567
-      Gabriel_Sheet_1_30: 2054464495
+      Gabriel_Sheet_1_0: -125224686
       Gabriel_Sheet_1_31: -1186097119
-      Gabriel_Sheet_1_32: 1903887798
       Gabriel_Sheet_1_33: -1957608740
       Gabriel_Sheet_1_34: -523562791
       Gabriel_Sheet_1_35: 2146493235
       Gabriel_Sheet_1_36: -276339676
+      Gabriel_Slide_1: 1903887798
+      Gabriel_Slide_2: 1908285417
+      Gabriel_Slide_3: 389843076
       Gabriel_Walk_1: -1483461977
       Gabriel_Walk_2: 1319730747
       Gabriel_Walk_3: 1762634181
