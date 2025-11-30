@@ -16,20 +16,19 @@ public class GlobalSettingsManager : MonoBehaviour
     private static GlobalSettingsManager instance;
 
     private void Awake()
+{
+    if (instance != null && instance != this)
     {
-        // --- Singleton para que no haya duplicados ---
-        if (instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        instance = this;
-        DontDestroyOnLoad(gameObject);
-
-        // --- SUSCRIBIR EL EVENTO IMPORTANTÍSIMO ---
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        Destroy(gameObject);
+        return;
     }
+
+    instance = this;
+
+    DontDestroyOnLoad(gameObject);
+
+    SceneManager.sceneLoaded += OnSceneLoaded;
+}
 
     private void OnDestroy()
     {
