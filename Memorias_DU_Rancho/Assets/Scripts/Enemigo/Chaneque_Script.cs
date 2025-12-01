@@ -13,6 +13,8 @@ public class EnemyAI2D : MonoBehaviour
     public float detectionRange = 5f;
 
     [Header("Combat")]
+    public int maxHealth = 3; // NUEVO: Vida máxima del enemigo
+    private int currentHealth; // NUEVO: Vida actual del enemigo
     public int damageToPlayer = 1;
 
     private Rigidbody2D rb;
@@ -28,16 +30,13 @@ public class EnemyAI2D : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         FindPlayer();
+        currentHealth = maxHealth; // NUEVO: Inicializar vida actual
     }
 
     private void Update()
     {
         if (isDead) return;
-
-        if (player == null)
-        {
-            return;
-        }
+        if (player == null) return;
 
         if (Vector2.Distance(transform.position, player.position) <= detectionRange)
         {
@@ -57,7 +56,7 @@ public class EnemyAI2D : MonoBehaviour
             Patrol();
         }
 
-        DetectWall(); // Vuelve a llamar a DetectWall() directamente
+        DetectWall();
     }
 
     private void Patrol()
@@ -80,7 +79,7 @@ public class EnemyAI2D : MonoBehaviour
         if (rb != null) rb.linearVelocity = new Vector2(runSpeed * direction, rb.linearVelocity.y);
     }
 
-    private void DetectWall() // Este método es ahora usado de nuevo
+    private void DetectWall()
     {
         if (wallCheck == null) return;
 
@@ -88,7 +87,7 @@ public class EnemyAI2D : MonoBehaviour
 
         if (hit.collider != null)
         {
-            direction *= -1; // Cambiar dirección
+            direction *= -1;
             Flip();
         }
     }
@@ -108,7 +107,22 @@ public class EnemyAI2D : MonoBehaviour
             }
         }
     }
-    
+
+    // NUEVO: Método para que el enemigo reciba daño
+    public void TakeDamage(int damage)
+    {
+        if (isDead) return; // Si ya está muerto, no recibe más daño
+
+        currentHealth -= damage;
+        Debug.Log("Enemigo recibe daño. Vida restante: " + currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+        // Opcional: Aquí podrías añadir efectos de sonido o visuales de daño
+    }
+
     private void FindPlayer()
     {
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
@@ -120,14 +134,17 @@ public class EnemyAI2D : MonoBehaviour
 
     public void Die()
     {
+        if (isDead) return; // Prevenir múltiples llamadas a Die
         isDead = true;
+        Debug.Log("Enemigo ha muerto!");
+
         if (anim != null) anim.SetBool("isDead", true);
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
             rb.isKinematic = true;
         }
-        
+
         if(TryGetComponent<Collider2D>(out Collider2D col))
         {
             col.enabled = false;
