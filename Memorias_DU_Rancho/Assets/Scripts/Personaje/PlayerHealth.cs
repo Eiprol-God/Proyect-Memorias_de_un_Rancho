@@ -18,10 +18,12 @@ public class PlayerHealth : MonoBehaviour
     private bool isDead = false;
 
     private Animator anim;
+    private Collider2D playerCollider;
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        playerCollider = GetComponent<Collider2D>();
 
         // Inicia con la mitad de la vida (lo dejamos como tú lo tenías)
         currentHealth = 5;
@@ -95,7 +97,7 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("El jugador murió.");
 
         // Animación de muerte
-        anim.SetBool("Death", true);
+        anim.SetTrigger("Death");
 
         // Desactivar el movimiento si existe
         if (TryGetComponent<PlayerMovement>(out var move))
@@ -104,6 +106,23 @@ public class PlayerHealth : MonoBehaviour
         // Desactivar ataque si existe
         if (TryGetComponent<PlayerAttack>(out var atk))
             atk.enabled = false;
+
+        // Hacer el collider más pequeño
+        if (playerCollider != null)
+        {
+            if (playerCollider is CapsuleCollider2D capsule)
+            {
+                // Reduce la altura de la cápsula y la baja un poco
+                capsule.size = new Vector2(capsule.size.x, 0.5f);
+                capsule.offset = new Vector2(capsule.offset.x, -0.75f);
+            }
+            else if (playerCollider is BoxCollider2D box)
+            {
+                // Reduce la altura de la caja y la baja un poco
+                box.size = new Vector2(box.size.x, 0.5f);
+                box.offset = new Vector2(box.offset.x, -0.75f);
+            }
+        }
 
         // Opcional:
         // GetComponent<Rigidbody2D>().simulated = false;
