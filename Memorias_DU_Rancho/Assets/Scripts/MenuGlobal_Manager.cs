@@ -88,9 +88,7 @@ public class GlobalSettingsManager : MonoBehaviour
         }
     }
 
-    // -------------------------------------------------------------------
     // CONECTAR EVENTOS DE SLIDERS
-    // -------------------------------------------------------------------
     private void ConnectSliderEvents()
     {
         if (brightnessSlider != null)
@@ -106,9 +104,7 @@ public class GlobalSettingsManager : MonoBehaviour
         }
     }
 
-    // -------------------------------------------------------------------
     // CAMBIO EN TIEMPO REAL (ANTES DE APLICAR)
-    // -------------------------------------------------------------------
     private void OnBrightnessValueChanged(float value)
     {
         if (brightnessOverlay != null)
@@ -128,9 +124,7 @@ public class GlobalSettingsManager : MonoBehaviour
         }
     }
 
-    // -------------------------------------------------------------------
     // BOTÓN: APLICAR
-    // -------------------------------------------------------------------
     public void ApplySettingsFromUI()
     {
         if (brightnessSlider != null)
@@ -173,9 +167,7 @@ public class GlobalSettingsManager : MonoBehaviour
         }
     }
 
-    // -------------------------------------------------------------------
     // BOTÓN: RESET
-    // -------------------------------------------------------------------
     public void ResetDefaults()
     {
         PlayerPrefs.SetFloat("Brightness", 0.5f);
