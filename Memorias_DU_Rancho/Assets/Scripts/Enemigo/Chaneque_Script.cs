@@ -75,6 +75,8 @@ public class EnemyAI2D : MonoBehaviour
         else
             direction = -1;
 
+        Flip(); // <-- Añade esta línea
+
         rb.linearVelocity = new Vector2(runSpeed * direction, rb.linearVelocity.y);
     }
 
