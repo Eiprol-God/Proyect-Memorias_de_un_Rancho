@@ -1771,8 +1771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b0f596cc885614ba63a5ee47ae53d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI2D
-  walkSpeed: 4
-  runSpeed: 6
+  walkSpeed: 2
+  runSpeed: 4
   wallCheck: {fileID: 1392735834}
   wallCheckDistance: 0.2
   obstacleLayer:
