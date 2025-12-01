@@ -130,9 +130,8 @@ public class PlayerMovement : MonoBehaviour
     // ============================
     void HandleSlideInput()
     {
-        if (!isSliding &&
-            Input.GetKey(KeyCode.LeftShift) &&
-            (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S)))
+        // Activa el slide con 'LeftControl' solo si está en el suelo y no está ya deslizando.
+        if (Input.GetKeyDown(KeyCode.LeftControl) && isGrounded && !isSliding)
         {
             StartSlide();
         }
@@ -142,18 +141,17 @@ public class PlayerMovement : MonoBehaviour
     {
         isSliding = true;
         slideTimer = slideDuration;
-
         anim.SetBool("Slide", true);
-
-        float direction = Input.GetKey(KeyCode.W) ? 1f : -1f;
-
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, direction * slideSpeed);
     }
 
     void UpdateSlideState()
     {
         if (isSliding)
         {
+            // Aplica velocidad horizontal constante durante el slide, en la dirección que mira el personaje
+            float slideDirection = transform.localScale.x;
+            rb.linearVelocity = new Vector2(slideDirection * slideSpeed, rb.linearVelocity.y);
+
             slideTimer -= Time.deltaTime;
 
             if (slideTimer <= 0f)

@@ -34,8 +34,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
 {
-    if (isDead || isInvincible) 
+    Debug.Log("TakeDamage FUE LLAMADO. Daño a recibir: " + amount);
+    if (isDead || isInvincible)
+    {
+        Debug.Log("TakeDamage ignorado. Razón: isDead=" + isDead + ", isInvincible=" + isInvincible);
         return;
+    }
 
     currentHealth -= amount;
     currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
@@ -50,6 +54,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     // Animación de daño SOLO si está vivo
+    Debug.Log("Intentando activar trigger 'Hurt'. Vida actual: " + currentHealth);
     anim.SetTrigger("Hurt");
 
     StartCoroutine(InvincibilityFrames());
