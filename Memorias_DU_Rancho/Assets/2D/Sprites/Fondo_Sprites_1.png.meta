@@ -373,6 +373,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Agave_azul
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1321
+        width: 451
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd7360456216e641932c71a6150283f
+      internalID: 145867074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agave_seco
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1305
+        width: 590
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ab82b23d5121749a4f555936d10046
+      internalID: 647056621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agave_dead
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 1499
+        width: 512
+        height: 973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71cfeba53727454f973f4df94db0776
+      internalID: -302361708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flor_agave
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 1596
+        width: 287
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fe2131e74ff51429eafedc048f95df
+      internalID: -1296812179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -389,9 +477,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      Agave_azul: 145867074
+      Agave_dead: -302361708
+      Agave_seco: 647056621
       Arbol_2: -60250405
       Arbol_3: -1541382879
       "Ca\xF1as": -37656964
+      Flor_agave: -1296812179
       Fondo_Sprites_1_1: -140806051
       Fondo_Sprites_1_11: 2021754578
       Fondo_Sprites_1_12: -2145471199
