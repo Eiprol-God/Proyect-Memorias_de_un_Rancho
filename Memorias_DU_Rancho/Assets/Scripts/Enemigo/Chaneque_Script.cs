@@ -2,40 +2,50 @@ using UnityEngine;
 
 public class EnemyAI2D : MonoBehaviour
 {
+    [Header("Movement")]
     public float walkSpeed = 2f;
     public float runSpeed = 4f;
 
+    [Header("Detection")]
     public Transform wallCheck;
+    public Transform groundCheck; // Nueva variable para detectar el suelo
     public float wallCheckDistance = 0.2f;
+    public float groundCheckDistance = 0.4f; // Nueva variable
     public LayerMask obstacleLayer;
-
     public float detectionRange = 5f;
+
+    [Header("Combat")]
     public int damageToPlayer = 1;
 
     private Rigidbody2D rb;
     private Animator anim;
-
     private Transform player;
+
     private bool isChasing = false;
     private bool isDead = false;
-    private int direction = 1; // 1 = derecha, -1 = izquierda
+    private int direction = 1; // 1 para derecha, -1 para izquierda
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        // Intentar encontrar al jugador al inicio
+        FindPlayer();
     }
 
     private void Update()
     {
         if (isDead) return;
 
-        float distanceFromPlayer = Vector2.Distance(transform.position, player.position);
+        // Si no se encontró al jugador, no hacer nada.
+        if (player == null)
+        {
+            return;
+        }
 
-        // ¿Jugador cerca?
-        if (distanceFromPlayer <= detectionRange)
+        // Decidir si patrullar o perseguir
+        if (Vector2.Distance(transform.position, player.position) <= detectionRange)
         {
             isChasing = true;
         }
@@ -44,7 +54,7 @@ public class EnemyAI2D : MonoBehaviour
             isChasing = false;
         }
 
-        // Movimiento
+        // Ejecutar estado
         if (isChasing)
         {
             ChasePlayer();
@@ -54,20 +64,41 @@ public class EnemyAI2D : MonoBehaviour
             Patrol();
         }
 
-        // Detectar muro
+        // Comprobar si hay muros
         DetectWall();
     }
 
     private void Patrol()
     {
-        anim.SetBool("isRunning", false);
+        if (anim != null) anim.SetBool("isRunning", false);
 
-        rb.linearVelocity = new Vector2(walkSpeed * direction, rb.linearVelocity.y);
+        // --- NUEVA LÓGICA DE DETECCIÓN DE SUELO ---
+        if (groundCheck != null)
+        {
+            // Lanza un rayo hacia abajo para ver si hay suelo
+            RaycastHit2D groundInfo = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, obstacleLayer);
+            if (groundInfo.collider == null)
+            {
+                // Si no hay suelo enfrente, darse la vuelta
+                if (direction == 1)
+                {
+                    direction = -1;
+                }
+                else
+                {
+                    direction = 1;
+                }
+                Flip();
+            }
+        }
+        // --- FIN DE LA NUEVA LÓGICA ---
+
+        if (rb != null) rb.linearVelocity = new Vector2(walkSpeed * direction, rb.linearVelocity.y);
     }
 
     private void ChasePlayer()
     {
-        anim.SetBool("isRunning", true);
+        if (anim != null) anim.SetBool("isRunning", true);
 
         // Cambiar dirección hacia el jugador
         if (player.position.x > transform.position.x)
@@ -75,14 +106,16 @@ public class EnemyAI2D : MonoBehaviour
         else
             direction = -1;
 
-        Flip(); // <-- Añade esta línea
+        Flip();
 
-        rb.linearVelocity = new Vector2(runSpeed * direction, rb.linearVelocity.y);
+        if (rb != null) rb.linearVelocity = new Vector2(runSpeed * direction, rb.linearVelocity.y);
     }
 
     private void DetectWall()
     {
-        // Raycast para detectar muro justo enfrente
+        // Salir si la referencia de wallCheck no está asignada en el Inspector
+        if (wallCheck == null) return;
+
         RaycastHit2D hit = Physics2D.Raycast(wallCheck.position, Vector2.right * direction, wallCheckDistance, obstacleLayer);
 
         if (hit.collider != null)
@@ -94,31 +127,45 @@ public class EnemyAI2D : MonoBehaviour
 
     private void Flip()
     {
-        Vector3 scale = transform.localScale;
-        scale.x = Mathf.Abs(scale.x) * direction;
-        transform.localScale = scale;
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * direction, transform.localScale.y, transform.localScale.z);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Daño al jugador al tocarlo
         if (collision.collider.CompareTag("Player"))
         {
-            PlayerHealth ph = collision.collider.GetComponent<PlayerHealth>();
-
-            if (ph != null)
+            // Usar TryGetComponent para más seguridad
+            if (collision.collider.TryGetComponent<PlayerHealth>(out PlayerHealth playerHealth))
             {
-                ph.TakeDamage(damageToPlayer);
+                playerHealth.TakeDamage(damageToPlayer);
             }
+        }
+    }
+    
+    private void FindPlayer()
+    {
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
         }
     }
 
     public void Die()
     {
         isDead = true;
-        anim.SetBool("isDead", true);
-        rb.linearVelocity = Vector2.zero; // Se queda quieto
-        GetComponent<Collider2D>().enabled = false;
+        if (anim != null) anim.SetBool("isDead", true);
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.isKinematic = true; // Evita que siga siendo afectado por la física al morir
+        }
+        
+        if(TryGetComponent<Collider2D>(out Collider2D col))
+        {
+            col.enabled = false;
+        }
+
         Destroy(gameObject, 2f);
     }
 }
