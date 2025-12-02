@@ -113,8 +113,8 @@ TextureImporter:
       name: Button_Pre_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 905
+        x: 707
+        y: 594
         width: 177
         height: 110
       alignment: 0
@@ -135,8 +135,8 @@ TextureImporter:
       name: Button_Nor_1
       rect:
         serializedVersion: 2
-        x: 390
-        y: 906
+        x: 708
+        y: 828
         width: 177
         height: 110
       alignment: 0
@@ -157,8 +157,8 @@ TextureImporter:
       name: LiveFull
       rect:
         serializedVersion: 2
-        x: 580
-        y: 908
+        x: 897
+        y: 310
         width: 125
         height: 106
       alignment: 0
@@ -179,8 +179,8 @@ TextureImporter:
       name: LiveEmpty
       rect:
         serializedVersion: 2
-        x: 715
-        y: 909
+        x: 909
+        y: 433
         width: 102
         height: 108
       alignment: 0
@@ -201,10 +201,10 @@ TextureImporter:
       name: Button_Confi
       rect:
         serializedVersion: 2
-        x: 829
-        y: 876
-        width: 192
-        height: 140
+        x: 885
+        y: 769
+        width: 139
+        height: 187
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: Button_Pre_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 810
+        x: 702
+        y: 14
         width: 246
-        height: 91
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,10 +245,10 @@ TextureImporter:
       name: Button_Hov_2
       rect:
         serializedVersion: 2
-        x: 270
-        y: 810
-        width: 247
-        height: 91
+        x: 705
+        y: 108
+        width: 246
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,10 +267,10 @@ TextureImporter:
       name: Button_Nor_2
       rect:
         serializedVersion: 2
-        x: 525
-        y: 810
+        x: 705
+        y: 200
         width: 245
-        height: 91
+        height: 89
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +289,8 @@ TextureImporter:
       name: Button_Pause
       rect:
         serializedVersion: 2
-        x: 848
-        y: 701
+        x: 882
+        y: 592
         width: 135
         height: 162
       alignment: 0
@@ -311,10 +311,10 @@ TextureImporter:
       name: Button_Pre_3
       rect:
         serializedVersion: 2
-        x: 17
-        y: 708
-        width: 194
-        height: 100
+        x: 704
+        y: 292
+        width: 191
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,10 +333,10 @@ TextureImporter:
       name: Button_Hov_3
       rect:
         serializedVersion: 2
-        x: 216
-        y: 708
-        width: 194
-        height: 100
+        x: 705
+        y: 394
+        width: 191
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,10 +355,10 @@ TextureImporter:
       name: Button_Nor_3
       rect:
         serializedVersion: 2
-        x: 413
-        y: 708
-        width: 208
-        height: 100
+        x: 707
+        y: 494
+        width: 191
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,10 +377,10 @@ TextureImporter:
       name: Pagina_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 15
-        width: 480
-        height: 682
+        x: 14
+        y: 520
+        width: 684
+        height: 490
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,10 +399,10 @@ TextureImporter:
       name: Pagina_2
       rect:
         serializedVersion: 2
-        x: 518
-        y: 15
-        width: 480
-        height: 682
+        x: 12
+        y: 22
+        width: 689
+        height: 487
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,8 +421,8 @@ TextureImporter:
       name: Button_Hov_1
       rect:
         serializedVersion: 2
-        x: 207
-        y: 906
+        x: 706
+        y: 711
         width: 177
         height: 110
       alignment: 0
