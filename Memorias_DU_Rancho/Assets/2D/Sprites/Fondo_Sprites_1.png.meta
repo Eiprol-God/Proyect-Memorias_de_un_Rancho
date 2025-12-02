@@ -157,8 +157,8 @@ TextureImporter:
       name: Arbol_3
       rect:
         serializedVersion: 2
-        x: 884
-        y: 632
+        x: 893
+        y: 588
         width: 814
         height: 621
       alignment: 0
@@ -377,12 +377,12 @@ TextureImporter:
       name: Agave_azul
       rect:
         serializedVersion: 2
-        x: 26
-        y: 1321
+        x: 1996
+        y: 2141
         width: 451
         height: 318
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -399,12 +399,12 @@ TextureImporter:
       name: Agave_seco
       rect:
         serializedVersion: 2
-        x: 489
-        y: 1305
-        width: 590
-        height: 431
+        x: 1093
+        y: 1228
+        width: 564
+        height: 426
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: Agave_dead
       rect:
         serializedVersion: 2
-        x: 1934
-        y: 1499
+        x: 1940
+        y: 1169
         width: 512
         height: 973
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -443,12 +443,12 @@ TextureImporter:
       name: Flor_agave
       rect:
         serializedVersion: 2
-        x: 1642
-        y: 1596
+        x: 1657
+        y: 1272
         width: 287
         height: 878
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -457,6 +457,182 @@ TextureImporter:
       bones: []
       spriteID: 58fe2131e74ff51429eafedc048f95df
       internalID: -1296812179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasto_1
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 2164
+        width: 156
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816a777d2c3f6264481aa7303d1c9d7e
+      internalID: 324988013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasto_2
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 2163
+        width: 77
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bd7814c2b0d6949bb91a50332a84f6
+      internalID: -140806051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pasto_3
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 2168
+        width: 78
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385e939c6294b854a95a88d9f63a7255
+      internalID: -1501363177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1670
+        width: 602
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36614f6f95e2ef4d9bee95392dc952e
+      internalID: 932295966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_1
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1374
+        width: 424
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf62993eec5a8cc4eb1ad62bbfe25b00
+      internalID: -1934663588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbusto_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1327
+        width: 625
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31770f06f28cc284f8bbdbe7956c7a9f
+      internalID: 843804754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follaje_2
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 584
+        width: 522
+        height: 560
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c18c52b9a1b2ad4d88012d190444f65
+      internalID: 620951579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follaje_1
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 23
+        width: 517
+        height: 558
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b8f87259f7d5d45b3af21a9aa00fb2
+      internalID: 977148944
       vertices: []
       indices: 
       edges: []
@@ -475,27 +651,27 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":2,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Agave_azul: 145867074
       Agave_dead: -302361708
       Agave_seco: 647056621
+      Arbol_1: -469866525
       Arbol_2: -60250405
       Arbol_3: -1541382879
+      Arbusto_1: -719142225
+      Arbusto_2: -1572412355
       "Ca\xF1as": -37656964
       Flor_agave: -1296812179
-      Fondo_Sprites_1_1: -140806051
+      Follaje_1: 977148944
+      Follaje_2: 620951579
       Fondo_Sprites_1_11: 2021754578
       Fondo_Sprites_1_12: -2145471199
       Fondo_Sprites_1_13: 1256074436
       Fondo_Sprites_1_14: -442470040
       Fondo_Sprites_1_15: -569945933
       Fondo_Sprites_1_16: 1477910126
-      Fondo_Sprites_1_2: -1501363177
       Fondo_Sprites_1_3: 1037101492
-      Fondo_Sprites_1_4: -719142225
-      Fondo_Sprites_1_5: -469866525
-      Fondo_Sprites_1_6: -1572412355
       Fondo_Sprites_1_7: -2037798110
       Hierba: -2049802186
       Pajaro_1: -500622290
@@ -506,6 +682,9 @@ TextureImporter:
       Pajaro_6: -611194361
       Pajaro_7: -694447306
       Pajaro_8: 1956735291
+      Pasto_1: 324988013
+      Pasto_2: -140806051
+      Pasto_3: -1501363177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

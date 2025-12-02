@@ -113,10 +113,10 @@ TextureImporter:
       name: Chaneque_Run_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 2036
-        width: 320
-        height: 421
+        x: 14
+        y: 807
+        width: 147
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +125,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c629a1c0605eae4393bd6da8035952f
+      spriteID: dac79cafe8bffe3419c3ebad5551dfb0
       internalID: -2082945070
       vertices: []
       indices: 
@@ -135,10 +135,10 @@ TextureImporter:
       name: Chaneque_Run_2
       rect:
         serializedVersion: 2
-        x: 344
-        y: 2036
-        width: 321
-        height: 421
+        x: 164
+        y: 807
+        width: 148
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,7 +147,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cdcca981f9292047a8c7f5e0084c871
+      spriteID: 41f34b171bc54ad43a5057a947d259fb
       internalID: -857690825
       vertices: []
       indices: 
@@ -157,10 +157,10 @@ TextureImporter:
       name: Chaneque_Run_3
       rect:
         serializedVersion: 2
-        x: 670
-        y: 2036
-        width: 319
-        height: 421
+        x: 314
+        y: 807
+        width: 147
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,30 +169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7496eb6b7aa01442857d0cf830f663d
+      spriteID: af3985134acbee64aafb9c2dabd8ef9f
       internalID: -71698086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chaneque_Run_
-      rect:
-        serializedVersion: 2
-        x: 995
-        y: 2036
-        width: 320
-        height: 421
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08a12082666fe4d41a5974ca99752185
-      internalID: -1047728678
       vertices: []
       indices: 
       edges: []
@@ -201,10 +179,10 @@ TextureImporter:
       name: Chaneque_Run_4
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 2036
-        width: 320
-        height: 421
+        x: 464
+        y: 807
+        width: 148
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +191,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b039383a5e35af43b4cd24826fdc2d0
+      spriteID: bea6d844ba8001a46ba6c6da4dbd693f
       internalID: 1325580709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chaneque_Run_5
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 807
+        width: 148
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09461f31a38261143bda1f122a253d4d
+      internalID: 446826687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuego_Mov_2
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 812
+        width: 144
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf821d118cb7a648b08f56ed5ffc7bf
+      internalID: 438996859
       vertices: []
       indices: 
       edges: []
@@ -223,10 +245,10 @@ TextureImporter:
       name: Chaneque_Death_1
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 2036
-        width: 216
-        height: 421
+        x: 14
+        y: 607
+        width: 100
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,7 +257,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9513fd3b1f61bdd49b79e36850054e8d
+      spriteID: 2f1c437a5894b564bb2acbab1f851046
       internalID: -2112403780
       vertices: []
       indices: 
@@ -245,10 +267,10 @@ TextureImporter:
       name: Chaneque_Death_2
       rect:
         serializedVersion: 2
-        x: 1870
-        y: 2036
-        width: 215
-        height: 421
+        x: 116
+        y: 607
+        width: 101
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,7 +279,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39f33724d2650e84e8502c3ce68081fb
+      spriteID: ed105a168e1c869499865b8a1cc4bbac
       internalID: 1014404226
       vertices: []
       indices: 
@@ -267,10 +289,10 @@ TextureImporter:
       name: Chaneque_Death_3
       rect:
         serializedVersion: 2
-        x: 2094
-        y: 2036
-        width: 214
-        height: 421
+        x: 219
+        y: 607
+        width: 100
+        height: 195
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,8 +301,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce603cfa294d7d4c96474a0f717311a
+      spriteID: 2dcaf77d30da694449e26b7ecb54a5f3
       internalID: 1136622275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuego_Mov_
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 605
+        width: 145
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ab2623471d9c646a582749a1a85b90
+      internalID: 1855376191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuego_Mov_3
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 605
+        width: 145
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54456507b699ba745a381ae91830020c
+      internalID: -463986150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuego_Mov_4
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 605
+        width: 145
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6951f9d0249f94591a27ed9a853b5e
+      internalID: -467525427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fuego_Mov_5
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 604
+        width: 145
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099ab43fc9a3ea944b6ec9423791a5bb
+      internalID: 1557181115
       vertices: []
       indices: 
       edges: []
@@ -289,10 +399,10 @@ TextureImporter:
       name: Chaneque_Death_4
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1609
-        width: 216
-        height: 422
+        x: 14
+        y: 408
+        width: 99
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,7 +411,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 527b230ce69a3b04eb7a685333230217
+      spriteID: 62656f7cec3469945aa6dc973c20e499
       internalID: -1808461462
       vertices: []
       indices: 
@@ -311,10 +421,10 @@ TextureImporter:
       name: Chaneque_Death_5
       rect:
         serializedVersion: 2
-        x: 241
-        y: 1609
-        width: 217
-        height: 422
+        x: 116
+        y: 408
+        width: 100
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,7 +433,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecdf8f8adbbf494cbf86fa31f343aed
+      spriteID: bfcd07b3e2a620e47bb9a66402875552
       internalID: 682272997
       vertices: []
       indices: 
@@ -333,10 +443,10 @@ TextureImporter:
       name: Chaneque_Death_6
       rect:
         serializedVersion: 2
-        x: 464
-        y: 1609
-        width: 215
-        height: 422
+        x: 219
+        y: 408
+        width: 100
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,7 +455,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9c1d60bcd116b34d9b806ddc4680a80
+      spriteID: 5b7b7b735364c25498fe739a67a40f59
       internalID: 572825600
       vertices: []
       indices: 
@@ -355,10 +465,10 @@ TextureImporter:
       name: Chaneque_Death_7
       rect:
         serializedVersion: 2
-        x: 687
-        y: 1609
-        width: 215
-        height: 422
+        x: 322
+        y: 408
+        width: 100
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,20 +477,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36509b850bb2bc048bf3118d23e6a1c2
+      spriteID: f6d9743060ebb6a4490b35b591f6fcde
       internalID: 187936741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Run_1
+      name: Fuego_Attac_1
       rect:
         serializedVersion: 2
-        x: 911
-        y: 1594
-        width: 312
-        height: 438
+        x: 427
+        y: 384
+        width: 205
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +499,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92baa288d5c9c7c418a14014feb7a476
-      internalID: -857693190
+      spriteID: 170a79e2ea8059e46a67f1d4bc0be353
+      internalID: 733369686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Run_2
+      name: Fuego_Attac_2
       rect:
         serializedVersion: 2
-        x: 1234
-        y: 1594
-        width: 314
-        height: 436
+        x: 640
+        y: 383
+        width: 205
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,20 +521,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14deeee61625f904293454d4e7c7c022
-      internalID: 1860555048
+      spriteID: b36f248b9a5d14449be58d58879a23ae
+      internalID: 935734723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Run_3
+      name: Fuego_Death_1
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 1594
-        width: 315
-        height: 436
+        x: 12
+        y: 212
+        width: 155
+        height: 189
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,20 +543,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c52aabec51b7f8498955d4598e70850
-      internalID: -200913112
+      spriteID: 3f9e5b80ebe83db41a237a447d72f7b8
+      internalID: 840078643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Run_4
+      name: Fuego_Death_2
       rect:
         serializedVersion: 2
-        x: 1888
-        y: 1594
-        width: 312
-        height: 437
+        x: 171
+        y: 213
+        width: 156
+        height: 189
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,20 +565,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eece5bac3fcee04da4312a264d79a49
-      internalID: 2117833986
+      spriteID: 2fed4152c51ef6548b61605dc6957f37
+      internalID: 690135042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Run_5
+      name: Fuego_Attac_5
       rect:
         serializedVersion: 2
-        x: 19
-        y: 1155
-        width: 314
-        height: 446
+        x: 390
+        y: 161
+        width: 205
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,20 +587,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bf5e88f9f724c744b4bd8adb37213c6
-      internalID: 1236058307
+      spriteID: bf2251d67f4592542b60a58a8cf412ac
+      internalID: -1387038182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Attack_1
+      name: Fuego_Attac_3
       rect:
         serializedVersion: 2
-        x: 346
-        y: 1129
-        width: 444
-        height: 471
+        x: 603
+        y: 161
+        width: 205
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,20 +609,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6056daa167e2c0b4faa3ba6850c3e1c5
-      internalID: -237103986
+      spriteID: cd6ddb23e6d6c844f988b84c08848e51
+      internalID: -1902457599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Attack_2
+      name: Fuego_Attac_4
       rect:
         serializedVersion: 2
-        x: 803
-        y: 1113
-        width: 443
-        height: 472
+        x: 813
+        y: 159
+        width: 205
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,20 +631,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b13ae5d916ceef341b0e02a42bbe3df8
-      internalID: 658179609
+      spriteID: 67378d022a4ba914b88159909a5b2cea
+      internalID: 1507434194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Attack_3
+      name: Fuego_Death_3
       rect:
         serializedVersion: 2
-        x: 1255
-        y: 1113
-        width: 444
-        height: 472
+        x: 12
+        y: 17
+        width: 156
+        height: 190
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,20 +653,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f428dcd2502528b40af0a329d7792a09
-      internalID: 2116895723
+      spriteID: f21ba8c2a8ab922459bc7222c5daf58f
+      internalID: -93813732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Attack_4
+      name: Fuego_Death_4
       rect:
         serializedVersion: 2
-        x: 1711
-        y: 1113
-        width: 443
-        height: 472
+        x: 170
+        y: 18
+        width: 155
+        height: 189
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,20 +675,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c97324c542f74d4096735c3a19c0247
-      internalID: -689484486
+      spriteID: 088d4702512f17d4eb99530597fe1739
+      internalID: 1255951898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Attack_5
+      name: Fuego_Death_5
       rect:
         serializedVersion: 2
-        x: 21
-        y: 637
-        width: 443
-        height: 472
+        x: 328
+        y: 20
+        width: 155
+        height: 134
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,8 +697,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98d8e3cfcf21aef45bb982beeca8d63f
-      internalID: -1731055858
+      spriteID: 670c33ec8a9c2c34f9abb9cb0545e7cb
+      internalID: 2041975069
       vertices: []
       indices: 
       edges: []
@@ -616,22 +726,27 @@ TextureImporter:
       Chaneque_Death_5: 682272997
       Chaneque_Death_6: 572825600
       Chaneque_Death_7: 187936741
-      Chaneque_Run_: -1047728678
-      Chaneque_Run_!: -2082945070
       Chaneque_Run_1: -2082945070
       Chaneque_Run_2: -857690825
       Chaneque_Run_3: -71698086
       Chaneque_Run_4: 1325580709
-      Fire_Attack_1: -237103986
-      Fire_Attack_2: 658179609
-      Fire_Attack_3: 2116895723
-      Fire_Attack_4: -689484486
-      Fire_Attack_5: -1731055858
-      Fire_Run_1: -857693190
-      Fire_Run_2: 1860555048
-      Fire_Run_3: -200913112
-      Fire_Run_4: 2117833986
-      Fire_Run_5: 1236058307
+      Chaneque_Run_5: 446826687
+      Fuego_Attac_1: 733369686
+      Fuego_Attac_2: 935734723
+      Fuego_Attac_3: -1902457599
+      Fuego_Attac_4: 1507434194
+      Fuego_Attac_5: -1387038182
+      Fuego_Attack_: 733369686
+      Fuego_Death_1: 840078643
+      Fuego_Death_2: 690135042
+      Fuego_Death_3: -93813732
+      Fuego_Death_4: 1255951898
+      Fuego_Death_5: 2041975069
+      Fuego_Mov_: 1855376191
+      Fuego_Mov_2: 438996859
+      Fuego_Mov_3: -463986150
+      Fuego_Mov_4: -467525427
+      Fuego_Mov_5: 1557181115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

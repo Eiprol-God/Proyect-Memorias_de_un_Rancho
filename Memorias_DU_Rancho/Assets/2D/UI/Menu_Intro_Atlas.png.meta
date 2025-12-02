@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Button_1_Hov
+      name: Button_Pre_1
       rect:
         serializedVersion: 2
-        x: 388
-        y: 2250
-        width: 347
-        height: 213
+        x: 19
+        y: 905
+        width: 177
+        height: 110
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1f7297801171ac4fb86b0ca4a2aa7ba
-      internalID: 1172209448
+      spriteID: 6aae6464999f1a349bfc7b22ec3cc96f
+      internalID: 181492164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_1_Nor
+      name: Button_Nor_1
       rect:
         serializedVersion: 2
-        x: 748
-        y: 2250
-        width: 344
-        height: 212
+        x: 390
+        y: 906
+        width: 177
+        height: 110
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,74 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9db04851e86595429dabab84cb96cda
-      internalID: -868781253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pasto_1
-      rect:
-        serializedVersion: 2
-        x: 1591
-        y: 2164
-        width: 165
-        height: 314
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddda0e55bc5938947bd8c1f162b3a34f
-      internalID: -652161025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Follaje_1
-      rect:
-        serializedVersion: 2
-        x: 2009
-        y: 1975
-        width: 464
-        height: 501
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f0fcfb8d9e87204b80e6b0dacdb5ec4
-      internalID: 1961623397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Button_1_Pre
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 2250
-        width: 343
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b96f4f754e5e9e34ea9abf68ed65bf88
-      internalID: 124261443
+      spriteID: 6ce38d69e1db3ca48b9e7926a13fece2
+      internalID: 1567707474
       vertices: []
       indices: 
       edges: []
@@ -223,10 +157,10 @@ TextureImporter:
       name: LiveFull
       rect:
         serializedVersion: 2
-        x: 1103
-        y: 2244
-        width: 253
-        height: 215
+        x: 580
+        y: 908
+        width: 125
+        height: 106
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10c061ad23e9580408719d18a4b8d50d
-      internalID: 1445889757
+      spriteID: 7ab42a666f9f1ab42939cd90fbaf309c
+      internalID: -1438278080
       vertices: []
       indices: 
       edges: []
@@ -245,10 +179,10 @@ TextureImporter:
       name: LiveEmpty
       rect:
         serializedVersion: 2
-        x: 1378
-        y: 2249
-        width: 206
-        height: 218
+        x: 715
+        y: 909
+        width: 102
+        height: 108
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4d002c68facdf488556a9f5c72d060
-      internalID: 616464678
+      spriteID: 3d4840c36a43d5b4b825ae14e2529ab3
+      internalID: -1572395152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pasto_2
+      name: Button_Confi
       rect:
         serializedVersion: 2
-        x: 1778
-        y: 2170
-        width: 81
-        height: 279
+        x: 829
+        y: 876
+        width: 192
+        height: 140
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca65c4db1899cad4ab86dd6702717344
-      internalID: -1936156057
+      spriteID: 99bf67d0aab60354aaa735cb8309494e
+      internalID: 1923844301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pasto_3
+      name: Button_Pre_2
       rect:
         serializedVersion: 2
-        x: 1872
-        y: 2168
-        width: 81
-        height: 271
+        x: 16
+        y: 810
+        width: 246
+        height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,20 +235,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 110b815522169ea41b11c857c0defeb9
-      internalID: 475155798
+      spriteID: 7f707eb3c191cd449862be6c6320f7be
+      internalID: -1996524916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_2_Nor
+      name: Button_Hov_2
       rect:
         serializedVersion: 2
-        x: 1010
-        y: 2065
-        width: 481
-        height: 170
+        x: 270
+        y: 810
+        width: 247
+        height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57ce239fe99d16346ac4d054962f919b
-      internalID: 491157416
+      spriteID: c4a07a4f1e106614a9086dfedea7e970
+      internalID: -370161078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_3_Pre
+      name: Button_Nor_2
       rect:
         serializedVersion: 2
-        x: 25
-        y: 1865
-        width: 373
-        height: 185
+        x: 525
+        y: 810
+        width: 245
+        height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd00a0c73c39a9439e97d9d195e2ccd
-      internalID: -1386082032
+      spriteID: cf090666ab01f55489c4f56d982aad2d
+      internalID: -1212013401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_3_Hov
+      name: Button_Pause
       rect:
         serializedVersion: 2
-        x: 407
-        y: 1865
-        width: 379
-        height: 185
+        x: 848
+        y: 701
+        width: 135
+        height: 162
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,20 +301,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db2d7368daa403340ad7c2147ef867a5
-      internalID: -1170431405
+      spriteID: 1d86c48fdca726648a4a2620daf3fd88
+      internalID: 962352501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Button_3_Nor
+      name: Button_Pre_3
       rect:
         serializedVersion: 2
-        x: 802
-        y: 1865
-        width: 371
-        height: 185
+        x: 17
+        y: 708
+        width: 194
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09dc56c7302d2a141b22c44d50226ea5
-      internalID: 607853387
+      spriteID: 6f5271572515fb54bb6ff44b1830c7fb
+      internalID: -480932390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hoja_Partic
+      name: Button_Hov_3
       rect:
         serializedVersion: 2
-        x: 1183
-        y: 1862
-        width: 405
-        height: 188
+        x: 216
+        y: 708
+        width: 194
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,20 +345,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc5e7fa5adedc1d4fbdae65c6f75ccfc
-      internalID: 1200406788
+      spriteID: 9d53b94dda6321348844a2da0f6c3936
+      internalID: 1409673584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paja_1
+      name: Button_Nor_3
       rect:
         serializedVersion: 2
-        x: 1628
-        y: 1784
-        width: 330
-        height: 341
+        x: 413
+        y: 708
+        width: 208
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,30 +367,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7436cc95fb36a446b8e7f4dbf824a2a
-      internalID: 1489727007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Follaje_2
-      rect:
-        serializedVersion: 2
-        x: 2014
-        y: 1475
-        width: 462
-        height: 498
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1ab806eda1b8d647b5281adfd42d8c6
-      internalID: -650516474
+      spriteID: 89510a12fa7b00c49b867464fd6fb2e5
+      internalID: 1661279029
       vertices: []
       indices: 
       edges: []
@@ -465,10 +377,10 @@ TextureImporter:
       name: Pagina_1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 954
-        width: 1258
-        height: 888
+        x: 17
+        y: 15
+        width: 480
+        height: 682
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,96 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c1099701b3396f488f4e6db52b8628f
-      internalID: 367324318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Botton_Conf
-      rect:
-        serializedVersion: 2
-        x: 1310
-        y: 1509
-        width: 372
-        height: 271
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4254f238104f0224daaf3b276816d936
-      internalID: -739421366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paja_Partc
-      rect:
-        serializedVersion: 2
-        x: 1619
-        y: 1243
-        width: 77
-        height: 252
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6ecdfe6fd372c646b7fd07c878644d1
-      internalID: 257708059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puerta_1
-      rect:
-        serializedVersion: 2
-        x: 1295
-        y: 22
-        width: 713
-        height: 741
-      alignment: 9
-      pivot: {x: 1.0015838, y: 0.00013201375}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bc104f8b3fd0a844bb0a44aa2b12efe
-      internalID: 288004383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paja_3
-      rect:
-        serializedVersion: 2
-        x: 2063
-        y: 730
-        width: 395
-        height: 686
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fb1c4676c715e443bdf17e030c33033
-      internalID: -2024508783
+      spriteID: 7ebddfc4b7dcebc4fa49fbaade758bc1
+      internalID: 185444736
       vertices: []
       indices: 
       edges: []
@@ -575,10 +399,10 @@ TextureImporter:
       name: Pagina_2
       rect:
         serializedVersion: 2
-        x: 28
-        y: 28
-        width: 1260
-        height: 889
+        x: 518
+        y: 15
+        width: 480
+        height: 682
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,20 +411,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a4f55835799c634db7abbc25c0f1bd0
-      internalID: -249401526
+      spriteID: dcadf2fa9532a8348ae227862fa8dff1
+      internalID: -2005645174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paja_2
+      name: Button_Hov_1
       rect:
         serializedVersion: 2
-        x: 2066
-        y: 6
-        width: 393
-        height: 706
+        x: 207
+        y: 906
+        width: 177
+        height: 110
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,118 +433,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ce8af9f62853ef4a9b40f444f0199d0
-      internalID: -1391506556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Button_2_Hov
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 2065
-        width: 481
-        height: 170
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e1cd7c00b01f2e49b73d5fb37e6d725
-      internalID: 1854067862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Button_2_Pre
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 2065
-        width: 481
-        height: 170
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0c60c0fd2e0fc74e9c176c04686ec4d
-      internalID: 944010958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arbusto_1
-      rect:
-        serializedVersion: 2
-        x: 1299
-        y: 770
-        width: 316
-        height: 717
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96091324f99d19246826fc3afcab3d46
-      internalID: 1161620155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arbusto_2
-      rect:
-        serializedVersion: 2
-        x: 1722
-        y: 769
-        width: 332
-        height: 632
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57c4f78bcdae23c4b99104c08f253e2b
-      internalID: 1454357842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arbusto_3
-      rect:
-        serializedVersion: 2
-        x: 1686
-        y: 1409
-        width: 321
-        height: 366
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 144aae0197952a349a66bb6a0c486387
-      internalID: -234270615
+      spriteID: 4ad66ea9488010240a768d1bc2eb0ce6
+      internalID: -1709213092
       vertices: []
       indices: 
       edges: []
@@ -741,42 +455,24 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Arbusto_1: 1161620155
-      Arbusto_2: 1454357842
-      Arbusto_3: -234270615
-      Botton_Conf: -739421366
-      Button_1_Hov: 1172209448
-      Button_1_Nor: -868781253
-      Button_1_Pre: 124261443
-      Button_2_Hov: 1854067862
-      Button_2_Nor: 491157416
-      Button_2_Pre: 944010958
-      Button_3_Hov: -1170431405
-      Button_3_Nor: 607853387
-      Button_3_Pre: -1386082032
-      Follaje_1: 1961623397
-      Follaje_2: -650516474
-      Hoja_Partic: 1200406788
-      LiveEmpty: 616464678
-      LiveFull: 1445889757
+      1: 1567707474
+      Button_Confi: 1923844301
+      Button_Hov_1: -1709213092
+      Button_Hov_2: -370161078
+      Button_Hov_3: 1409673584
+      Button_Nor_1: 1567707474
+      Button_Nor_2: -1212013401
+      Button_Nor_3: 1661279029
+      Button_Pause: 962352501
+      Button_Pre_1: 181492164
+      Button_Pre_2: -1996524916
+      Button_Pre_3: -480932390
+      LiveEmpty: -1572395152
+      LiveFull: -1438278080
       Menu_Intro_Atlas_13: -286059132
-      Menu_Intro_Atlas_14: 185444736
-      Menu_Intro_Atlas_17: -224032784
       Menu_Intro_Atlas_2: -1162323274
-      Menu_Intro_Atlas_21: -1763594964
-      Menu_Intro_Atlas_22: -632114397
-      Menu_Intro_Atlas_28: -1861968825
-      Menu_Intro_Atlas_31: 463337355
-      Pagina_1: 367324318
-      Pagina_2: -249401526
-      Paja_1: 1489727007
-      Paja_2: -1391506556
-      Paja_3: -2024508783
-      Paja_Partc: 257708059
-      Pasto_1: -652161025
-      Pasto_2: -1936156057
-      Pasto_3: 475155798
-      Puerta_1: 288004383
+      Pagina_1: 185444736
+      Pagina_2: -2005645174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
