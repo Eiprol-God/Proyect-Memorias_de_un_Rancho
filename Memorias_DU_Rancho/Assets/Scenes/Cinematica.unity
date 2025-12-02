@@ -4692,6 +4692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 280563923}
   - component: {fileID: 280563922}
+  - component: {fileID: 280563924}
   m_Layer: 0
   m_Name: Gab_borroso
   m_TagString: Untagged
@@ -4772,6 +4773,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!95 &280563924
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280563921}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fbff7a54462e500429041932e1d00ec9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &281119298
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,6 +6063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 388320573}
   - component: {fileID: 388320572}
+  - component: {fileID: 388320574}
   m_Layer: 0
   m_Name: Bruja
   m_TagString: Untagged
@@ -6114,12 +6138,34 @@ Transform:
   m_GameObject: {fileID: 388320571}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.28596544, y: 13.29, z: 16.05}
+  m_LocalPosition: {x: -0.2859654, y: 14.79, z: 16.05}
   m_LocalScale: {x: 0.75251, y: 0.75251, z: 0.75251}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!95 &388320574
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388320571}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 092c8875bd7664745924cbe6819fe2e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &394532982
 GameObject:
   m_ObjectHideFlags: 0
@@ -21269,6 +21315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1153318344}
   - component: {fileID: 1153318343}
+  - component: {fileID: 1153318345}
   m_Layer: 0
   m_Name: Hoja3
   m_TagString: Untagged
@@ -21349,6 +21396,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!95 &1153318345
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153318342}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc652dbd4315db64585611f52ee27125, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1156801318
 GameObject:
   m_ObjectHideFlags: 0
@@ -22075,6 +22144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1261587392}
   - component: {fileID: 1261587391}
+  - component: {fileID: 1261587393}
   m_Layer: 0
   m_Name: Melena_bruja
   m_TagString: Untagged
@@ -22149,12 +22219,34 @@ Transform:
   m_GameObject: {fileID: 1261587390}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.29, y: 13.78, z: 16.56}
+  m_LocalPosition: {x: -0.29, y: 15.28, z: 16.56}
   m_LocalScale: {x: 1.2475, y: 1.2475, z: 1.2475}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!95 &1261587393
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261587390}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f0236c02d94d4b419b7814fbf57cc28, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1262407975
 GameObject:
   m_ObjectHideFlags: 0
@@ -28997,7 +29089,7 @@ Transform:
   m_GameObject: {fileID: 1951514414}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.3963685, y: 9.705549, z: 19.5}
+  m_LocalPosition: {x: -2.3963685, y: 10.97, z: 19.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30124,6 +30216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072557149}
   - component: {fileID: 2072557148}
+  - component: {fileID: 2072557150}
   m_Layer: 0
   m_Name: Lengua
   m_TagString: Untagged
@@ -30204,6 +30297,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!95 &2072557150
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072557147}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9c072a93f47bcb746b9b9ad52c074cca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2079880584
 GameObject:
   m_ObjectHideFlags: 0
@@ -31369,7 +31484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1097890974988633578, guid: fdca5a8826daa9a49ad2ac0d8de0b012, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50.41
+      value: 50.7
       objectReference: {fileID: 0}
     - target: {fileID: 1097890974988633578, guid: fdca5a8826daa9a49ad2ac0d8de0b012, type: 3}
       propertyPath: m_LocalPosition.z
