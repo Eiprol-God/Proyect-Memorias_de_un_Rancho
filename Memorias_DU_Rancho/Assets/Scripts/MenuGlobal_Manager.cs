@@ -45,45 +45,35 @@ public class GlobalSettingsManager : MonoBehaviour
     // -------------------------------------------------------------------
     private void TryFindUI()
     {
-        // ---- BRILLO ----
-        if (brightnessOverlay == null)
+        // Reseteamos las referencias a la UI de la escena anterior.
+        // Esto es crucial para evitar 'MissingReferenceException' y para asegurar
+        // que se busquen los componentes en la nueva escena.
+        brightnessOverlay = null;
+        brightnessSlider = null;
+        volumeSlider = null;
+
+        // ---- Busca la capa de brillo ----
+        Image[] images = FindObjectsOfType<Image>(true);
+        foreach (Image img in images)
         {
-            Image[] images = FindObjectsOfType<Image>(true);
-            foreach (Image img in images)
+            if (img.name == "BrightnessOverlay")
             {
-                if (img.name == "BrightnessOverlay")
-                {
-                    brightnessOverlay = img;
-                    break;
-                }
+                brightnessOverlay = img;
+                break;
             }
         }
 
-        // ---- SLIDER DE BRILLO ----
-        if (brightnessSlider == null)
+        // ---- Busca los sliders ----
+        Slider[] sliders = FindObjectsOfType<Slider>(true);
+        foreach (Slider s in sliders)
         {
-            Slider[] sliders = FindObjectsOfType<Slider>(true);
-            foreach (Slider s in sliders)
+            if (s.name == "BrightnessSlider")
             {
-                if (s.name == "BrightnessSlider")
-                {
-                    brightnessSlider = s;
-                    break;
-                }
+                brightnessSlider = s;
             }
-        }
-
-        // ---- SLIDER DE VOLUMEN ----
-        if (volumeSlider == null)
-        {
-            Slider[] sliders = FindObjectsOfType<Slider>(true);
-            foreach (Slider s in sliders)
+            else if (s.name == "VolumeSlider")
             {
-                if (s.name == "VolumeSlider")
-                {
-                    volumeSlider = s;
-                    break;
-                }
+                volumeSlider = s;
             }
         }
     }
