@@ -132,57 +132,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nube
-      rect:
-        serializedVersion: 2
-        x: 580
-        y: 2185
-        width: 689
-        height: 237
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0b2d92115bdc9542acef5c4cb580e46
-      internalID: -1187479821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tronco
-      rect:
-        serializedVersion: 2
-        x: 729
-        y: 2010
-        width: 955
-        height: 300
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8bb5ec289075df4398b89f5b9eb4fd8
-      internalID: -856534698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Charro
       rect:
         serializedVersion: 2
-        x: 1774
-        y: 1572
-        width: 605
-        height: 854
+        x: 1508
+        y: 1531
+        width: 641
+        height: 902
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,28 +149,6 @@ TextureImporter:
       bones: []
       spriteID: 255a5339d63774f43867922639acac4f
       internalID: 1420044331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Atlas03_Cinematica_complete_4
-      rect:
-        serializedVersion: 2
-        x: 1597
-        y: 1981
-        width: 52
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c9d68a535e0ff54e85a8069d4dfb77a
-      internalID: 1383219826
       vertices: []
       indices: 
       edges: []
@@ -242,35 +176,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nube2
-      rect:
-        serializedVersion: 2
-        x: 1372
-        y: 1824
-        width: 552
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5e99a81127d1ec4698652070d605e39
-      internalID: -2037851898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Melena_bruja
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1315
-        width: 611
-        height: 447
+        x: 700
+        y: 1960
+        width: 663
+        height: 474
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,7 +229,7 @@ TextureImporter:
         height: 349
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 9}
       customData: 
       outline: []
       physicsShape: []

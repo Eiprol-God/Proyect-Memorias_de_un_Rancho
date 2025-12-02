@@ -157,10 +157,10 @@ TextureImporter:
       name: Lobo
       rect:
         serializedVersion: 2
-        x: 970
-        y: 1055
-        width: 1422
-        height: 1345
+        x: 1015
+        y: 1350
+        width: 1043
+        height: 1050
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: Bruja
       rect:
         serializedVersion: 2
-        x: 1181
-        y: 527
-        width: 222
-        height: 266
+        x: 1055
+        y: 917
+        width: 245
+        height: 293
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,10 +245,10 @@ TextureImporter:
       name: Mano_charro
       rect:
         serializedVersion: 2
-        x: 1682
-        y: 437
-        width: 386
-        height: 386
+        x: 1029
+        y: 374
+        width: 410
+        height: 399
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,6 +329,72 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Tronco_lobo
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 350
+        width: 368
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c64d89b786c36941a500d6619e87b59
+      internalID: 1352855535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nube_lobo1
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 91
+        width: 524
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979d12856a2f26744a759d07934a9bb6
+      internalID: -1841910370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nube_lobo2
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 56
+        width: 485
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12cf7c81193f62d4c8201ab39d41f2ff
+      internalID: 579276249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -355,6 +421,9 @@ TextureImporter:
       Lengua: 1012293654
       Lobo: -1075497121
       Mano_charro: -2086913468
+      Nube_lobo1: -1841910370
+      Nube_lobo2: 579276249
+      Tronco_lobo: 1352855535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
