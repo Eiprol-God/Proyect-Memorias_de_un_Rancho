@@ -97,23 +97,155 @@ TextureImporter:
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bruja_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1733
+        width: 932
+        height: 567
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4773ef395af07ee428a74d0847d78eeb
+      internalID: -2107382537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bruja_2
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1738
+        width: 933
+        height: 570
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5a3bc5ce2cec047ab80ab9b1f58790
+      internalID: -1376738365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bruja_4
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 885
+        width: 934
+        height: 859
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1565d34a3837f0e4483b73255cffd681
+      internalID: 1795701727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bruja_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 975
+        width: 932
+        height: 606
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3949c80d3bbf2a3448385b8475e41e2f
+      internalID: -525788057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bruja_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 5
+        width: 934
+        height: 938
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0801444ee5c8e44e9cd014d8263de89
+      internalID: 870022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: atlas bruja y agave_5
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 57
+        width: 1074
+        height: 760
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769b2175610ed2c4db973b64cfc793f9
+      internalID: -1882520680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0690543ad2c279642af09367542b4d54
     internalID: 0
     vertices: []
     indices: 
@@ -121,8 +253,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Bruja_1: -2107382537
+      Bruja_2: -1376738365
+      Bruja_3: -525788057
+      Bruja_4: 1795701727
+      Bruja_5: 870022
+      atlas bruja y agave_5: -1882520680
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
