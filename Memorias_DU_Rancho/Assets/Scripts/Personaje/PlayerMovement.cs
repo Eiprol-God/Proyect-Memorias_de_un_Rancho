@@ -26,11 +26,27 @@ public class PlayerMovement : MonoBehaviour
     // -------- COMPONENTES --------
     private Rigidbody2D rb;
     private Animator anim;
+    private BoxCollider2D boxCollider;
+
+    // -------- COLLIDER SLIDE --------
+    [Header("Configuración del Collider para Slide")]
+    [Tooltip("El nuevo tamaño que tendrá el BoxCollider2D al deslizarse.")]
+    public Vector2 slideColliderSize = new Vector2(0.8f, 0.5f);
+    [Tooltip("La nueva posición (offset) que tendrá el BoxCollider2D al deslizarse.")]
+    public Vector2 slideColliderOffset = new Vector2(0f, -0.7f);
+    private Vector2 originalColliderSize;
+    private Vector2 originalColliderOffset;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
+
+        // Guardar las dimensiones originales del collider
+        originalColliderSize = boxCollider.size;
+        originalColliderOffset = boxCollider.offset;
     }
 
     void Update()
@@ -142,6 +158,13 @@ public class PlayerMovement : MonoBehaviour
         isSliding = true;
         slideTimer = slideDuration;
         anim.SetBool("Slide", true);
+
+        // Cambiar collider para el slide
+        if (boxCollider != null)
+        {
+            boxCollider.size = slideColliderSize;
+            boxCollider.offset = slideColliderOffset;
+        }
     }
 
     void UpdateSlideState()
@@ -156,8 +179,15 @@ public class PlayerMovement : MonoBehaviour
 
             if (slideTimer <= 0f)
             {
+                // Terminar el slide y restaurar el collider
                 isSliding = false;
                 anim.SetBool("Slide", false);
+
+                if (boxCollider != null)
+                {
+                    boxCollider.size = originalColliderSize;
+                    boxCollider.offset = originalColliderOffset;
+                }
             }
         }
     }
