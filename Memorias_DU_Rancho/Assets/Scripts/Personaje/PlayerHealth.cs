@@ -7,6 +7,10 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 10;
     public int currentHealth;
 
+    [Header("Manejo de Muerte")]
+    [Tooltip("Arrastra aquí el objeto del Jugador que tiene el script PlayerDeathHandler.")]
+    public PlayerDeathHandler deathHandler;
+
     [Header("UI")]
     public Sprite LiveFull;
     public Sprite LiveEmpty;
@@ -35,32 +39,32 @@ public class PlayerHealth : MonoBehaviour
     // ------------------------------
 
     public void TakeDamage(int amount)
-{
-    Debug.Log("TakeDamage FUE LLAMADO. Daño a recibir: " + amount);
-    if (isDead || isInvincible)
     {
-        Debug.Log("TakeDamage ignorado. Razón: isDead=" + isDead + ", isInvincible=" + isInvincible);
-        return;
+        Debug.Log("TakeDamage FUE LLAMADO. Daño a recibir: " + amount);
+        if (isDead || isInvincible)
+        {
+            Debug.Log("TakeDamage ignorado. Razón: isDead=" + isDead + ", isInvincible=" + isInvincible);
+            return;
+        }
+
+        currentHealth -= amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+        UpdateHeartsUI();
+
+        // Si la vida llega a 0 NO reproducimos Hurt
+        if (currentHealth <= 0)
+        {
+            PlayerDie();
+            return;
+        }
+
+        // Animación de daño SOLO si está vivo
+        Debug.Log("Intentando activar trigger 'Hurt'. Vida actual: " + currentHealth);
+        anim.SetTrigger("Hurt");
+
+        StartCoroutine(InvincibilityFrames());
     }
-
-    currentHealth -= amount;
-    currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-
-    UpdateHeartsUI();
-
-    // Si la vida llega a 0 NO reproducimos Hurt
-    if (currentHealth <= 0)
-    {
-        PlayerDie();
-        return;
-    }
-
-    // Animación de daño SOLO si está vivo
-    Debug.Log("Intentando activar trigger 'Hurt'. Vida actual: " + currentHealth);
-    anim.SetTrigger("Hurt");
-
-    StartCoroutine(InvincibilityFrames());
-}
 
 
     public void Heal(int amount)
@@ -93,6 +97,7 @@ public class PlayerHealth : MonoBehaviour
 
     void PlayerDie()
     {
+        if (isDead) return; // Prevenir llamadas múltiples
         isDead = true;
         Debug.Log("El jugador murió.");
 
@@ -124,9 +129,16 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-        // Opcional:
-        // GetComponent<Rigidbody2D>().simulated = false;
-        // GetComponent<Collider2D>().enabled = false;
+        // *** NUEVA LÍNEA AÑADIDA ***
+        // Llamar al manejador de la pantalla de muerte
+        if (deathHandler != null)
+        {
+            deathHandler.HandlePlayerDeath();
+        }
+        else
+        {
+            Debug.LogError("No se ha asignado el 'deathHandler' en el script PlayerHealth. No se puede mostrar la pantalla de muerte.");
+        }
     }
 
     // ------------------------------
