@@ -11236,7 +11236,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.82, y: 2.76}
+  m_Size: {x: 5.31, y: 0.41}
   m_EdgeRadius: 0
 --- !u!1001 &954503200
 PrefabInstance:
@@ -21578,6 +21578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 5
   currentHealth: 5
+  deathHandler: {fileID: 1903055152}
   LiveFull: {fileID: -1438278080, guid: d51229ad888232d4ea35b85428816819, type: 3}
   LiveEmpty: {fileID: -1572395152, guid: d51229ad888232d4ea35b85428816819, type: 3}
   hearts:
